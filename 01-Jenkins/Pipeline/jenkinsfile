@@ -29,11 +29,12 @@ node {
    stage('Archive-Artifacts') {
    archiveArtifacts 'target/*.war'
   }
- } 
+ 
  notify('Job Completed')   
 }catch (err) {
   notify("Error ${err}")
   currentBuild.result = 'FAILURE'
+}
 }
 
 
