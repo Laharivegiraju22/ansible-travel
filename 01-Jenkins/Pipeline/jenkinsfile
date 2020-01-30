@@ -12,7 +12,7 @@ node {
  dir(project_path) {
     
   stage('Maven-Clean') {
-   sh label: '', script: 'mvn cleans'
+   sh label: '', script: 'mvn clean'
   }
     
  stage('Maven-Compile') {
