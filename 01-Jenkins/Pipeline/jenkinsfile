@@ -1,7 +1,8 @@
 node {
-
+ try  {
  notify('Job Started') 
-  
+
+     
   stage('Git-Checkout') {
    git 'https://github.com/amitvashisttech/mindtree-devops-30Jan2020.git'
   }
@@ -29,13 +30,14 @@ node {
    stage('Archive-Artifacts') {
    archiveArtifacts 'target/*.war'
   }
- 
- notify('Job Completed')   
-}catch (err) {
+ }
+notify('Job Completed')   
+} catch (err) {
   notify("Error ${err}")
   currentBuild.result = 'FAILURE'
 }
 }
+
 
 
 def notify(status){
@@ -46,3 +48,4 @@ def notify(status){
 	<p>Check console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
 		)
 	}
+
