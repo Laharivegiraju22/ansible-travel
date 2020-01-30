@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "installing docker"
+echo "############################## Installing Docker CE ################################"
 apt-get update
 apt-get install -y \
     apt-transport-https \
@@ -13,4 +13,5 @@ add-apt-repository \
    stable"
 apt-get update && apt-get install -y docker-ce=$(apt-cache madison docker-ce | grep 17.03 | head -1 | awk '{print $3}')
 
+echo "############################## Setting Up Mail Sever ################################"
 docker run --restart unless-stopped --name mailhog -p 1025:1025 -p 8025:8025 -d mailhog/mailhog
