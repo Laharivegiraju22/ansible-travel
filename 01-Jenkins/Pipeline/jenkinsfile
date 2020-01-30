@@ -11,7 +11,7 @@ node {
  dir(project_path) {
     
   stage('Maven-Clean') {
-   sh label: '', script: 'mvn clean'
+   sh label: '', script: 'mvn cleans'
   }
     
  stage('Maven-Compile') {
@@ -31,7 +31,11 @@ node {
   }
  } 
  notify('Job Completed')   
+}catch (err) {
+  notify("Error ${err}")
+  currentBuild.result = 'FAILURE'
 }
+
 
 def notify(status){
     emailext (
