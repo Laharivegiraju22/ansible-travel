@@ -5,4 +5,4 @@ services:
   petclinic:
     build: . 
     ports:
-      - '38080:8080'
+      - '30080:8080'
