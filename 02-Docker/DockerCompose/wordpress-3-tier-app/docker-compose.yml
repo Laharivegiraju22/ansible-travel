@@ -9,7 +9,7 @@ nginx:
     links:
         - wordpress
     restart: always
-	
+
 mysql:
     image: mariadb
     ports:
