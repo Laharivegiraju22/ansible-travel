@@ -30,6 +30,9 @@ node {
    stage('Archive-Artifacts') {
    archiveArtifacts 'target/*.war'
   }
+   stage('Archive-Artifacts') {
+   sh label: '', script: 'docker-compose up -d --build'
+  }
  }
 notify('Job Completed')   
 } catch (err) {
