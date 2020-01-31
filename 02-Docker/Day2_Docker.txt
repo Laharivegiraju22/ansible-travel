@@ -550,3 +550,54 @@
   550  ls -ltr 
   551  ls
   552  history > Day2_Docker.txt
+  553  cd ..
+  554  ls
+  555  git add . ; git commit -m "Docker History"; git push 
+  556  sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  557  sudo chmod +x /usr/local/bin/docker-compose
+  558  docker-compose --version
+  559  history 
+  560  ls
+  561  cd 02-Docker/
+  562  ls
+  563  cd DockerCompose/
+  564  ls
+  565  vim docker-compose.yaml
+  566  docker images
+  567  vi docker-compose.yaml 
+  568  vim docker-compose.yaml 
+  569  docker-compose up -f 
+  570  docker-compose up -d
+  571  docker ps 
+  572  vi docker-compose.yaml 
+  573  docker-compose up -d
+  574  cd ..
+  575  ls
+  576  git add . ; git commit -m "Docker-Compose Ex1"; git push 
+  577  ls
+  578  cd 02-Docker/
+  579  ls
+  580  cd DockerCompose/
+  581  ls
+  582  mkdir apache-env
+  583  mv docker-compose.yaml apache-env/
+  584  ls
+  585  mkdir wordpress-3-tier-app
+  586  ls
+  587  cd wordpress-3-tier-app/
+  588  ls
+  589  mkdir -p nginx/ ; mkdir -p db-data/ ; mkdir -p logs/nginx/ ; mkdir -p wordpress/
+  590  vim nginx/wordpress.conf
+  591  ls
+  592  history 
+  593  ls
+  594  vim nginx/wordpress.conf
+  595  vim docker-compose.yml
+  596  ls
+  597  cd ,,
+  598  ls
+  599  cd ..
+  600  ls
+  601  cd ..
+  602  ls
+  603  history > Day2_Docker.txt 
