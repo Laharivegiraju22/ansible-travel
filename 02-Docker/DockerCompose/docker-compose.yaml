@@ -1,0 +1,12 @@
+my-test:
+  image: myapache-dockerfile:v5  
+  ports:
+    - '8095:80'
+my-qa:
+  image: myapache-dockerfile:v4  
+  ports:
+    - '8096:80'
+my-prod:
+  image: myapache-dockerfile:v3  
+  ports:
+    - '8097:80'
