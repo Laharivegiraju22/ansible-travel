@@ -1,0 +1,552 @@
+    1  apt-get update; apt-get install default-jdk
+    2  git clone 
+    3  git clone https://github.com/amitvashisttech/mindtree-devops-30Jan2020.git
+    4  ls
+    5  cd mindtree-devops-30Jan2020/
+    6  ls
+    7  mkdir 01-Jenkins
+    8  ls
+    9  cd 01-Jenkins/
+   10  ls
+   11  cd 
+   12  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+   13  ls
+   14  java -jar jenkins.war --httpPort=8081 &
+   15  ls
+   16  cd mindtree-devops-30Jan2020/
+   17  ls
+   18  cd 01-Jenkins/
+   19  ls
+   20  history > Day1.txt
+   21  cd ..
+   22  l
+   23  history 
+   24  git add .; git commit -m "Jenkins"; git push 
+   25  ls
+   26  git config list 
+   27  ls
+   28  git config --list 
+   29  ls
+   30  history 
+   31  ls
+   32  cd mindtree-devops-30Jan2020/
+   33  ls
+   34  cd 01-Jenkins/
+   35  history 
+   36  ls
+   37  cd 
+   38  ps -ef | grep -i jenkins
+   39  date
+   40  ls
+   41  git clone https://github.com/amitvashisttech/devops-mindtree-20191115.git
+   42  ls
+   43  cd mindtree-devops-30Jan2020/
+   44  ls
+   45  cp -rf ../devops-mindtree-20191115/atmosphere .
+   46  ls
+   47  cd atmosphere/
+   48  ls
+   49  cd spring-boot-samples/spring-boot-sample-atmosphere/
+   50  ls
+   51  rm -rf docker-compose.yaml Dockerfile 
+   52  ls
+   53  apt-get install maven -y 
+   54  mvn --version
+   55  ls
+   56  mvn compile
+   57  ls
+   58  cd ..
+   59  ls
+   60  cd - 
+   61  ls
+   62  mvn compile
+   63  vi /root/mindtree-devops-30Jan2020/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/pom.xml
+   64  vi  pom.xml 
+   65  mvn install
+   66  vi pom.xml 
+   67  mvn compile
+   68  vi pom.xml 
+   69  rm -rf pom.xml 
+   70  cp -rf /root/devops-mindtree-20191115/atmosphere/spring-boot-samples/spring-boot-sample-atmosphere/pom.xml . 
+   71  mvn compile
+   72  vi pom.xml 
+   73  mvn compile
+   74  vi 
+   75  vi /root/mindtree-devops-30Jan2020/atmosphere/spring-boot-dependencies/pom.xml
+   76  ls
+   77  cd 
+   78  ls
+   79  git clone https://github.com/amitvashist7/jenkins2-course-spring-petclinic.git
+   80  ls
+   81  cd jenkins2-course-spring-petclinic/
+   82  ls
+   83  mvn compile
+   84  mvn test
+   85  mvn package
+   86  ls
+   87  cd target/
+   88  ls
+   89  java -jar petclinic.war
+   90  ls
+   91  cd ..
+   92  ls
+   93  cd ..
+   94  ls
+   95  cd jenkins2-course-spring-petclinic/
+   96  ls
+   97  mvn clean 
+   98  ls
+   99  cd ..
+  100  ls
+  101  cd mindtree-devops-30Jan2020/
+  102  ls
+  103  rm -rf atmosphere
+  104  mkdir petclinic
+  105  cd petclinic/
+  106  ls
+  107  cp -rf ../../jenkins2-course-spring-petclinic/* . 
+  108  ls
+  109  rm readme.md 
+  110  rm README.md 
+  111  ls
+  112  cat bower.json 
+  113  ls
+  114  cat mvnw.cmd 
+  115  ls
+  116  mvn clean
+  117  ls
+  118  cd ..
+  119  ls
+  120  git add . ; git commit -m "Petclinic": git push 
+  121  git add . ; git commit -m "Petclinic"; git push 
+  122  ls
+  123  git config --list 
+  124  cd 
+  125  ls
+  126  cd /tmp/
+  127  ls
+  128  git clone https://github.com/Atmosphere/atmosphere-samples.git
+  129  ls
+  130  cd atmosphere-samples/
+  131  ls
+  132  cd samples/
+  133  ls
+  134  cd ..
+  135  ls
+  136  cd samples/
+  137  ls
+  138  cd websocket-chat/
+  139  ls
+  140  mvn package
+  141  ls
+  142  cd target/
+  143  ls
+  144  java -jar atmosphere-websocket-chat.war
+  145  ls
+  146  cd ..
+  147  ls
+  148  cd .
+  149  ls
+  150  cd ..
+  151  s
+  152  ls
+  153  cd ..
+  154  ls
+  155  cd ..
+  156  ls
+  157  rm -rf atmosphere-samples/
+  158  cd 
+  159  ls
+  160  cd mindtree-devops-30Jan2020/
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd devops-mindtree-20191115/
+  165  ls
+  166  cd atmosphere/
+  167  ls
+  168  cd spring-boot-samples/spring-boot-sample-atmosphere/
+  169  ls
+  170  mvn package
+  171  ls
+  172  cd ..
+  173  ls
+  174  cd ..
+  175  ls
+  176  vi pom.xml 
+  177  ls
+  178  cd - 
+  179  ls
+  180  cd spring-boot-sample-atmosphere/
+  181  ls
+  182  mvn package
+  183  vi ../../pom.xml 
+  184  mvn package
+  185  vi pom.xml 
+  186  mvn package
+  187  vi pom.xml 
+  188  mvn package
+  189  cd
+  190  cd /root/.jenkins/workspace/petclinic-pipeline
+  191  ls
+  192  cd petclinic/
+  193  ls
+  194  pwd
+  195  ls
+  196  cd ..
+  197  cd
+  198  ls
+  199  cd mindtree-devops-30Jan2020/
+  200  ls
+  201  mkdir 01-Jenkins/Code -p 
+  202  mv petclinic 01-Jenkins/Code/
+  203  ls
+  204  cd 01-Jenkins/
+  205  ls
+  206  cd Code/
+  207  ls
+  208  cd petclinic/
+  209  ls
+  210  cd .././
+  211  cd ../
+  212  ls
+  213  cd ..
+  214  ls
+  215  git add . ; git commit -m "Petclinic"; git push 
+  216  ls
+  217  cd 01-Jenkins/
+  218  ls
+  219  mkdir Pipeline
+  220  vim Pipeline/Basic-Pipeline
+  221  cat Pipeline/Basic-Pipeline
+  222  vim Pipeline/Basic-Pipeline
+  223  cat Pipeline/Basic-Pipeline
+  224  cd ..
+  225  git add . ; git commit -m "Petclinic-Pipeline"; git push 
+  226  ls
+  227  vim 01-Jenkins/Pipeline/jenkinsfile
+  228  git config --list 
+  229  ls
+  230  ls -ltr 01-Jenkins/Pipeline/jenkinsfile 
+  231  git add . ; git commit -m "Petclinic-Pipeline"; git push 
+  232  ls
+  233  echo "Test ID- 01"> CHANGE_ME.txt
+  234  git add . ; git commit -m "CHANGE-ID 01"; git push 
+  235  cd
+  236  ls
+  237  cd .jenkins/workspace/
+  238  ls
+  239  cd petclinic-pipeline-as-code
+  240  ls
+  241  cd 
+  242  ls
+  243  cd devops-mindtree-20191115/
+  244  git logs
+  245  git log
+  246  ls
+  247  cd ..
+  248  ls
+  249  cd mindtree-devops-30Jan2020/
+  250  ls
+  251  echo "Test ID- 02" > CHANGE_ME.txt
+  252  git add . ; git commit -m "CHANGE-ID 02"; git push 
+  253  git config --global --edit
+  254  git add . ; git commit -m "CHANGE-ID 02"; git push 
+  255  ls
+  256  cd mindtree-devops-30Jan2020/
+  257  ls
+  258  vi 01-Jenkins/Pipeline/jenkinsfile 
+  259  git add . ; git commit -m "CHANGE-ID 03"; git push 
+  260  ls
+  261  vim 01-Jenkins/Pipeline/jenkinsfile 
+  262  git add . ; git commit -m "CHANGE-ID 04"; git push 
+  263  ls
+  264  cat 01-Jenkins/Pipeline/jenkinsfile 
+  265  > 01-Jenkins/Pipeline/jenkinsfile
+  266  vi 01-Jenkins/Pipeline/jenkinsfile
+  267  git add . ; git commit -m "CHANGE-ID 05"; git push 
+  268  vi 01-Jenkins/Pipeline/jenkinsfile
+  269  git add . ; git commit -m "CHANGE-ID 06"; git push 
+  270  ls
+  271  cd mindtree-devops-30Jan2020/
+  272  ls
+  273  mkdir 02-Docker
+  274  ls
+  275  cd 02-Docker/
+  276  ls
+  277  vim install-docker.sh
+  278  chmod +x install-docker.sh 
+  279  vi install-docker.sh 
+  280  ./install-docker.sh 
+  281  docker version 
+  282  docker ps 
+  283  curl ifconfig.me
+  284  netstat -tulnp 
+  285  docker ps 
+  286  ls
+  287  cat install-docker.sh 
+  288  docker ps 
+  289  docker kill c93fb4ff8b20        
+  290  docker rm c93fb4ff8b20        
+  291  docker run --restart unless-stopped --name mailhog -p 1025:1025 -p 8082:8025 -d mailhog/mailhog
+  292  docker ps 
+  293  ls
+  294  cd
+  295  ls
+  296  cd devops-mindtree-20191115/
+  297  ls
+  298  cd Jenkins/
+  299  ls
+  300  cat Jenkins-stage-docker-terraform-ansible-file 
+  301  ls
+  302  cd ..
+  303  ls
+  304  cd ..
+  305  ls
+  306  cd mindtree-devops-30Jan2020/
+  307  ls
+  308  vim 01-Jenkins/Pipeline/jenkinsfile 
+  309  ls
+  310  git add . ; git commit -m "Email Config"; git push 
+  311  ls
+  312  cd 02-Docker/
+  313  ls
+  314  cat install-docker.sh 
+  315  vim install-docker.sh 
+  316  cd ..
+  317  ls
+  318  git add . ; git commit -m "Email Config"; git push 
+  319  ls
+  320  vim 01-Jenkins/Pipeline/jenkinsfile 
+  321  ls
+  322  cat 02-Docker/install-docker.sh 
+  323  ls
+  324  cd mindtree-devops-30Jan2020/
+  325  ls
+  326  cd 02-Docker/
+  327  ls
+  328  cat install-docker.sh 
+  329  docker ps 
+  330  docker kill $(docker ps -qa)
+  331  docker rm $(docker ps -qa)
+  332  docker ps 
+  333  docker run helloworld
+  334  docker run ubuntu:16.04 echo "Hello World"
+  335  docker ps 
+  336  docker ps -a
+  337  docker run ubuntu echo "Hello World"
+  338  docker ps -a
+  339  docker run ubuntu echo "Hello World"
+  340  docker ps -a
+  341  docker run --name app-a ubuntu echo "Hello World"
+  342  docker ps -a
+  343  docker run --name app-a ubuntu echo "Hello World"
+  344  docker run --name app-b ubuntu echo "Hello World"
+  345  docker ps 
+  346  docker run -it ubuntu 
+  347  docker ps 
+  348  docker attach b2a4060bc4df        
+  349  docker ps 
+  350  docker ps -a
+  351  docker start b2a4060bc4df        
+  352  docker ps 
+  353  docker attach b2a4060bc4df        
+  354  docker ps -a 
+  355  docker ps -aq 
+  356  docker kill $(docker ps -aq)
+  357  docker rm $(docker ps -aq)
+  358  docker ps -a 
+  359  cd
+  360  docker images 
+  361  docker run -it ubuntu:16.04
+  362  docker ps 
+  363  docker inspect 837d7b20c102        
+  364  curl 
+  365  curl 172.17.0.2
+  366  curl 172.17.0.2/docker.html
+  367  ls
+  368  docker ps 
+  369  docker commit -p -m "My Apache" 837d7b20c102 my-apache:v1
+  370  curl 172.17.0.2/docker.html
+  371  docker ps 
+  372  docker images 
+  373  docker run --name apache-test-1 -p 8085:80 my-apache:v1
+  374  docker ps 
+  375  docker run -d --name apache-test-2 -p 8086:80 my-apache:v1
+  376  docker ps 
+  377  docker run -itd --name apache-test-2 -p 8086:80 my-apache:v1 
+  378  docker run -itd --name apache-test-3 -p 8086:80 my-apache:v1 
+  379  docker ps 
+  380  curl 172.17.0.3
+  381  docker inspect apache-test-3
+  382  curl 172.17.0.3
+  383  curl localhost:8086
+  384  docker ps 
+  385  docker attach apache-test-3
+  386  curl localhost:8086
+  387  curl 172.17.0.3
+  388  docker ps 
+  389  docker commit -p -m "My Apache 2" apache-test-3  my-apache:v2
+  390  docker images 
+  391  docker run -itd --name apache-test-4 -p 8087:80 my-apache:v2 
+  392  docker ps 
+  393  curl 172.17.0.3
+  394  curl 172.17.0.4
+  395  curl 172.17.0.4/docker.html
+  396  curl localhost:8087
+  397  curl localhost:8087/docker.html
+  398  docker kill $(docker ps -aq)
+  399  docker rm $(docker ps -aq)
+  400  docker ps -a
+  401  docker images 
+  402  docker run -itd --name apache-test-1 -p 8085:80 my-apache:v1
+  403  curl localhost:8085
+  404  docker run -itd --name apache-test-2 -p 8086:80 my-apache:v2
+  405  curl localhost:8086
+  406  docker run -d --name apache-test-3 -p 8087:80 my-apache:v2
+  407  curl localhost:8087
+  408  ip netns 
+  409  ln -s /var/run/docker/netns /var/run/netns
+  410  ip netns
+  411  ip netns list 
+  412  ip netns c657f395c475 
+  413  ip netns --help
+  414  ip netns help
+  415  ip netns exec c657f395c475  ip a
+  416  ip netns exec c657f395c475  ip link
+  417  ip netns exec c657f395c475  ip addr
+  418  apt-get install brctl -y 
+  419  apt-get install bridge-utils
+  420  brctl show 
+  421  ip addr 
+  422  ip netns exec c657f395c475  ip addr
+  423  ip link list 
+  424  history 
+  425  ip addr 
+  426  ip netns link 
+  427  ip link list 
+  428  ip netns exec c657f395c475  ip link
+  429  brctl show 
+  430  brctl show
+  431  brctl --helo
+  432  brctl show veth12f55ef list 
+  433  brctl  docker0         list 
+  434  brctl  showmac docker0   
+  435  brctl  showmacs 
+  436  brctl  showmacs docker0   
+  437  ip link list 
+  438  ip netns exec c657f395c475  ip link
+  439  docker ps 
+  440  docker run -itd --name apache-test-3 -p 8088:80 my-apache:v2
+  441  docker run -itd --name apache-test-4 -p 8088:80 my-apache:v2
+  442  ip link list 
+  443  brctl  showmacs docker0   
+  444  brctl docker0   
+  445  brctl show
+  446  docker top 
+  447  ls
+  448  docker ps 
+  449  docker top 
+  450  docker top e247dc68f812        
+  451  ls
+  452  cd mindtree-devops-30Jan2020/
+  453  ls
+  454  cd 02-Docker/
+  455  ls
+  456  git pull
+  457  ls
+  458  mkdir Dockerfile
+  459  mkdir Dockerfile/apache
+  460  cd Dockerfile/apache
+  461  ;ls
+  462  ls
+  463  vim Dockerfile
+  464  docker build -t myapache-dockerfile:v1 .
+  465  docker images
+  466  docker run -d -p 8091:80 myapache-dockerfile:v1
+  467  vi Dockerfile 
+  468  docker build -t myapache-dockerfile:v2 .
+  469  docker run -d -p 8092:80 myapache-dockerfile:v2 
+  470  docker ps 
+  471  curl localhost:8088
+  472  curl localhost:8088/hello.html
+  473  cat Dockerfile 
+  474  curl localhost:8088/hello.html
+  475  docker ps 
+  476  docker run -d -p 8092:80 myapache-dockerfile:v2 
+  477  docker ps 
+  478  docker ps -a 
+  479  vi Dockerfile 
+  480  docker build -t myapache-dockerfile:v3 .
+  481  docker run -d -p 8093:80 myapache-dockerfile:v3
+  482  docker ps 
+  483  curl localhost:8093/hello.html
+  484  ls
+  485  vim "index.html"
+  486  vi Dockerfile 
+  487  docker build -t myapache-dockerfile:v4 .
+  488  docker run -d -p 8094:80 myapache-dockerfile:v4
+  489  cd
+  490  docker run -d -P myapache-dockerfile:v4
+  491  docker ps 
+  492  cd - 
+  493  ls
+  494  vim Dockerfile 
+  495  docker build -t myapache-dockerfile:v5 .
+  496  docker run -d -P myapache-dockerfile:v5
+  497  docker ps 
+  498  ls
+  499  cd ../../../
+  500  ls
+  501  git add . ; git commit -m "Dockerfile"; git push
+  502  ls
+  503  ip addr 
+  504  docker network ls 
+  505  docker network inspect c97aff4a1602        
+  506  brctl show
+  507  ip addr
+  508  ip addr | grep -i veth01b40e2
+  509  ip netns
+  510  ip addr | grep -i veth01b40e2
+  511  ip addr | grep -A 10 veth01b40e2
+  512  ip netns 
+  513  ip netns exec 3ca302f878d4 ip a
+  514* 
+  515  ip netns exec 3ca302f878d4 ip a
+  516  ip addr | grep -i veth01b40e2
+  517  netstat -tulnp 
+  518  netstat -tulnp | grep -i proxy 
+  519  iptables -L
+  520  ip netns 
+  521  docker ps 
+  522  docker kill 342481c676c1        
+  523  ip netns 
+  524  iptables -L
+  525  ip addr 
+  526  docker kill $(docker ps -aq)
+  527  ip addr 
+  528  docker run -it ubuntu:16.04
+  529  ip addr 
+  530  docker run -it centos 
+  531  ip addr 
+  532  ip netns
+  533  ip netns exec 79e699d193d7  ip a
+  534  ip addr 
+  535  ls
+  536  history 
+  537  cd /var/run/docker/netns/
+  538  ls
+  539  cd ..
+  540  cd 
+  541  ip netns 
+  542  ip route 
+  543  ls
+  544  cd mindtree-devops-30Jan2020/
+  545  ks
+  546  ls
+  547  cd 02-Docker/
+  548  ls
+  549  mkdir DockerCompose
+  550  ls -ltr 
+  551  ls
+  552  history > Day2_Docker.txt
