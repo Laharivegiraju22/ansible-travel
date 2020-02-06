@@ -4,10 +4,10 @@ node {
 
      
   stage('Git-Checkout') {
-   git 'https://github.com/amitvashisttech/mindtree-devops-30Jan2020.git'
+   git 'https://github.com/Laharivegiraju22/ansible-travel.git'
   }
     
- def project_path="01-Jenkins/Code/petclinic"
+ def project_path="01-Jenkins/Code/"
  
  dir(project_path) {
     
