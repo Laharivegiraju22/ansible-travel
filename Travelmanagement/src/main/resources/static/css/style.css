@@ -1,0 +1,16 @@
+.header {
+	height: 100px;
+	background-color: rgb(94, 94, 228);
+	padding: 25px;
+	display: flex;
+	text-align: center;
+	color: aliceblue;
+}
+
+.add {
+	margin-top: 50px;
+	left: 50px;
+	height: 50px;
+	display: flex;
+	text-align: center;
+}
