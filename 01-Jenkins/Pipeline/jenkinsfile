@@ -7,7 +7,7 @@ node {
    git 'https://github.com/Laharivegiraju22/ansible-travel.git'
   }
     
- def project_path="01-Jenkins/Code/"
+ def project_path="01-Jenkins/Code/Travelmanagement"
  
  dir(project_path) {
     
@@ -60,7 +60,7 @@ notify('Job Completed')
 
 def notify(status){
     emailext (
-	to: "amitvashist7@gmail.com",
+	to: "laharivegiraju@gmail.com",
 	subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
 	 body: """<p>${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
 	<p>Check console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
