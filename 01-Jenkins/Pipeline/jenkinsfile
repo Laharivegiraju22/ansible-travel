@@ -7,7 +7,7 @@ node {
    git 'https://github.com/Laharivegiraju22/ansible-travel.git'
   }
     
- def project_path="01-Jenkins/Code/Travelmanagement"
+ def project_path="01-Jenkins/Code/travelmanagement/"
  
  dir(project_path) {
     
