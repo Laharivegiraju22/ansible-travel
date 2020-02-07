@@ -20,7 +20,7 @@ public class AppController {
 	
 	@Autowired TravelService serviceObj;
 	
-	@RequestMapping("/")
+	@RequestMapping("/travel")
 	public String index()
 	{
 		return "index";
